@@ -1,4 +1,0 @@
-services:
-  - type: web
-    name: BookMyShow
-    buildCommand: npm install && npm start
