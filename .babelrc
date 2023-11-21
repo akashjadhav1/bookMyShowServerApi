@@ -1,10 +1,5 @@
 {
-    "presets": [
-      ["@babel/preset-env", {
-        "targets": {
-          "node": "your_node_version" // specify your Node.js version here
-        }
-      }]
-    ]
+    "presets": ["@babel/preset-env"]
   }
+  
   
