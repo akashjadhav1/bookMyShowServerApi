@@ -2,7 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 async function connectToDatabase() {
   try {
-    const dbUrl = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/bookMyShow';
+    const dbUrl = process.env.MONGODB_URI || 'mongodb://localhost:27017/bookMyShow';
 
     if (!dbUrl.startsWith('mongodb://') && !dbUrl.startsWith('mongodb+srv://')) {
       throw new Error('Invalid MongoDB URI scheme. It should start with "mongodb://" or "mongodb+srv://".');
