@@ -2,7 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 async function connectToDatabase() {
   try {
-    const dbUrl = process.env.MONGODB_URI || 'mongodb://localhost:27017/bookMyShow';
+    const dbUrl = process.env.MONGODB_URI || 'mongodb+srv://akashjadhav:akash123@cluster1.wsxs1wt.mongodb.net/bookMyShow';
     console.log(dbUrl);
 
     if (!dbUrl.startsWith('mongodb://') && !dbUrl.startsWith('mongodb+srv://')) {
